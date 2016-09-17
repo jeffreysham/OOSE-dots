@@ -1,0 +1,25 @@
+#board {
+    padding-bottom: 1em;
+}
+
+#board > svg {
+    display: block;
+    margin: auto;
+}
+
+.container{
+    max-width: 600px;
+}
+
+.score {
+    text-align: center;
+}
+
+.red { color: #f44; }
+.blue { color: #44f; }
+
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+}
