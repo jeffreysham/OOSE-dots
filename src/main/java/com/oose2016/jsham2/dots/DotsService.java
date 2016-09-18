@@ -100,7 +100,7 @@ public class DotsService {
 
 		String playerType = null;
 		
-		if (json.has("playerType") && !json.get("playerType").isJsonNull()) {
+		if (json != null && json.has("playerType") && !json.get("playerType").isJsonNull()) {
 			playerType = json.get("playerType").getAsString();
 			playerType = playerType.toUpperCase();
 			if (!(playerType.equals("RED") || playerType.equals("BLUE"))) {
@@ -238,7 +238,7 @@ public class DotsService {
 			throw new DotsServiceException("400", null);
 		}
 		
-		if (gameId == null || gameId.equals("null") || !isNumeric(gameId) || 
+		if (json == null || gameId == null || gameId.equals("null") || !isNumeric(gameId) || 
 				!json.has("playerId") || !json.has("row") || !json.has("col")) {
 			// Bad parameters
 			throw new DotsServiceException("400", null);
