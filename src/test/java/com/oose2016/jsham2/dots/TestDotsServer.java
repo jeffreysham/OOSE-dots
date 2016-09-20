@@ -19,7 +19,6 @@ import spark.utils.IOUtils;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.google.gson.reflect.TypeToken;
 
 /**
  * Test class for the dots server. Based off of the TestTodoServer
